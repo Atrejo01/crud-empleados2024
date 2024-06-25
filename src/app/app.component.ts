@@ -23,8 +23,8 @@ export class AppComponent {
     //Permite agregar un empleado al arreglo de empleados
     this.empleados.push(this.modelo);
     this.modelo={};
-    console.log(this.empleados);
-    this.msg='Empleado agregado!';
+    console.log(this.empleados);  //<--
+    this.msg='Empleado agregado!';  //<--
   } 
   
   deleteEmpleado(i:number):void{
@@ -48,7 +48,7 @@ export class AppComponent {
     let i=this.myValue;
     this.empleados[i]= this.modelo2;
     this.modelo2={};
-    //this.msg='Registro actualizado';
+    this.msg='Registro actualizado';
   }
 
 
